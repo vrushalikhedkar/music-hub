@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Msic Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- Header Section with legel and authontication section -->
+    <header>
+        <form method="get" action="search.html">
+            <input type="search" name="search-key" placeholder="search song, artist, playlist etc..." />
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <a href="./privacy.html"> Privacy Policy</a>
+        <a href="./T&C.html"> Term & Condition</a>
+        <div id="dropdown">
+            <button type="menu" id="dropdown-btn">signup</button>
+            <div id="dropdown-content">
+                <a href="./login.php">Login into existing account</a>
+                <a href="./ragister.php"> Create new account</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div id="branding">
+            <img src="/asserts/site-image/logo/music-hub logo.gif" alt="Music-hub-logo" class="logo-img">
+            <h1> MUSIC HUB</h1>
+            <p>One Stop Shop For all your musical needs</p>
+        </div>
+        <div id="search-box">
+            <form method="get" action="search.html">
+                <input type="search" name="search-key" placeholder="search song, artist, playlist etc..." />
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <nav>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./pages/hits.html" class="active">Top Hits</a></li>
+        <li><a href="./pages/released.html" class="active">New Released</a></li>
+        <li><a href="./pages/album.html" class="active">Album</a></li>
+        <li><a href="./pages/artist.html" class="active">Artist</a></li>
+        <li><a href="./pages/playlist.html" class="active">Playlist</a></li>
+        <li><a href="./pages/about-us.html" class="active">About us</a></li>
+    </nav>
+
+    <main>
+                 
+        <section id="hero">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/134708231/preview.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e9b7ca0bad5d0c983e8a7a6e1a67520d" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/134708231/preview.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e9b7ca0bad5d0c983e8a7a6e1a67520d" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://themeforest.img.customer.envatousercontent.com/files/134708231/preview.__large_preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=e9b7ca0bad5d0c983e8a7a6e1a67520d" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="music-list">
+            <h31>songs</h31>
+            <div id="song-details"></div>
+        </section>        
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- for the font awsome icons -->
+    <script src="https://kit.fontawesome.com/c90ad2af29.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
